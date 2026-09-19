@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>刷题记录</title>
+    <meta name="description" content="每日刷题记录：思路、源代码与易错点">
+
+    <!-- Core Theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/core.min.css">
+  </head>
+  <body class="loading">
+    <div id="app"></div>
+
+    <!-- Configuration -->
+    <script>
+      window.$docsify = {
+        name: '刷题记录',
+        // 部署到 GitHub 后，把下面这行换成你自己的 "用户名/仓库名"，
+        // 页面右上角就会出现指向仓库的小图标；不需要的话删掉这一行也可以。
+        repo: 'your-username/shuati-notes',
+
+        // 自动读取每个目录下的 _sidebar.md 作为左侧目录
+        loadSidebar: true,
+        subMaxLevel: 2,
+        auto2top: true,
+
+        // 全文搜索：题目名称、标签、代码里的关键词都能搜到
+        search: {
+          paths: 'auto',
+          placeholder: '搜索题目 / 标签 / 关键词',
+          noData: '没有找到结果',
+          depth: 4,
+        },
+
+        copyCode: {
+          buttonText: '复制',
+          errorText: '出错了',
+          successText: '已复制',
+        },
+      };
+    </script>
+
+    <!-- Docsify.js -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@5"></script>
+
+    <!-- 插件：全文搜索 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@5/dist/plugins/search.min.js"></script>
+    <!-- 插件：代码块一键复制 -->
+    <script src="https://unpkg.com/docsify-copy-code@2"></script>
+
+    <!-- 代码高亮：按需加了 C/C++/Java/Python，其余语言 docsify 已内置 -->
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-c.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-cpp.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  </body>
+</html>
