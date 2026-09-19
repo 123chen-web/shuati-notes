@@ -5,3 +5,4 @@
   - [Day 2](c/day2.md)
 
 - Python（自学笔记）
+  - [Day 1](python/day1.md)
